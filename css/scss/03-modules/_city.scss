@@ -1,0 +1,84 @@
+.city {
+    .city-form {
+        text-align: center;
+        padding: 30px 0 50px;
+
+        .select {
+            width: 360px;
+            display: inline-block;
+        }
+    }
+
+    .city-list {
+        @include flex($alignI: flex-start, $justify: flex-start);
+
+        li {
+            width: 25%;
+            list-style: none;
+            @include flex($alignI: flex-start);
+            padding-right: 40px;
+
+            i {
+                width: 35px;
+                font-size: 36px;
+                color: #043655;
+                text-align: left;
+            }
+
+            span {
+                width: -webkit-calc(100% - 35px);
+                width: calc(100% - 35px);
+                color: #fff;
+                font-size: 18px;
+                line-height: 30px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+.title {
+    color: #fff;
+    font-size: 30px;
+    font-family: $ptb;
+    opacity: .9;
+}
+.show-more {
+    margin: 40px 0;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    border-bottom: 1px dashed #fff;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    &:hover {
+        border-bottom-color: transparent;
+    }
+}
+
+.subtitle {
+    margin: 40px 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.quality-box {
+    @include flex($alignI: flex-start, $justify: center);
+    padding: 0 100px 80px;
+
+    .item {
+        width: 33.333%;
+
+        img {
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        span {
+            color: #fff;
+        }
+    }
+}
