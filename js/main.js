@@ -4,6 +4,33 @@ window.params = {
     isIOS: /iPhone|iPad|iPod/i.test(navigator.userAgent)
 };
 
+/*custom select*/
+$('select').each(function(index, el) { 
+    var select = $(this).wrap('<div class="select"></div>');
+    var block = select.parent('.select');
+    var label = block.append('<span class="select-label">'+select.attr('data-label')+'</span>').find('.select-label');
+    var dropdown = block.append('<ul class="select-dropdown"></ul>').find('.select-dropdown');
+
+    select.css('display', 'none');
+    dropdown.css('display', 'none');
+
+    select.find('option').each(function(index, el) {
+        dropdown.append('<li class="select-dropdown-item" data-value="'+$(this).attr('value')+'">'+$(this).text()+'</li>')
+    });
+
+    label.on('click', function(event) {
+        event.preventDefault();
+        dropdown.slideToggle('fast');
+    });
+
+    dropdown.find('.select-dropdown-item').on('click', function(event) {
+        event.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
+        label.text($(this).text());
+        select.val( $(this).attr('data-value') );
+        dropdown.slideToggle('fast');
+    });
+});
 
 jQuery(document).ready(function($) {
 
@@ -22,38 +49,7 @@ jQuery(document).ready(function($) {
         });
     });
 
-
-    /*custom select*/
-    $('select').each(function(index, el) { 
-        var select = $(this).wrap('<div class="select"></div>');
-        var block = select.parent('.select');
-        var label = block.append('<span class="select-label"></span>').find('.select-label');
-        var dropdown = block.append('<ul class="select-dropdown"></ul>').find('.select-dropdown');
-
-        select.css('display', 'none');
-        dropdown.css('display', 'none');
-
-        select.find('option').each(function(index, el) {
-            dropdown.append('<li class="select-dropdown-item" data-value="'+$(this).attr('value')+'">'+$(this).text()+'</li>')
-        });
-
-        label.on('click', function(event) {
-            event.preventDefault();
-            dropdown.slideToggle('fast');
-        });
-
-        label.text( dropdown.find('.select-dropdown-item').first().addClass('active').text() );
-        select.val( dropdown.find('.select-dropdown-item').first().attr('data-value') );
-
-        dropdown.find('.select-dropdown-item').on('click', function(event) {
-            event.preventDefault();
-            $(this).addClass('active').siblings().removeClass('active');
-            label.text($(this).text());
-            select.val( $(this).attr('data-value') );
-            dropdown.slideToggle('fast');
-        });
-    });
-      
+     
 
     /*---------------------------
                                   MENU TOGGLE
