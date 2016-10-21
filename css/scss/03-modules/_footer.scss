@@ -1,11 +1,13 @@
 .footer {
     padding: 90px 0;
+    color: #fff;
 
     &__title {
         font-size: 60px;
         color: #fff;
         font-family: $ptb;
         opacity: .9;
+        margin-bottom: 97px;
     }
 
     .producer-box {
@@ -16,6 +18,11 @@
             width: 50%;
             text-align: left;
             padding: 0 100px;
+            line-height: 30px;
+
+            p:not(:last-child) {
+                margin-bottom: 30px;
+            }
         }
     }
 }

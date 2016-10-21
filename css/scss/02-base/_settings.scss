@@ -11,7 +11,10 @@ body {
     padding-top: 100px;
     background-color: #00437A;
 }
-
+strong {
+    font-family: $rm;
+    font-weight: normal;
+}
 // lAYOUT
 // ---------------------------
 .wrapper {
