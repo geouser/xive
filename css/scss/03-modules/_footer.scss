@@ -1,0 +1,21 @@
+.footer {
+    padding: 90px 0;
+
+    &__title {
+        font-size: 60px;
+        color: #fff;
+        font-family: $ptb;
+        opacity: .9;
+    }
+
+    .producer-box {
+        padding: 0 100px;
+        @include flex($alignI: flex-start);
+
+        .col {
+            width: 50%;
+            text-align: left;
+            padding: 0 100px;
+        }
+    }
+}
