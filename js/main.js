@@ -68,6 +68,14 @@ jQuery(document).ready(function($) {
 
 
     /*---------------------------
+                                  Slider
+    ---------------------------*/
+    $('.slider').slick({
+        dots: true
+    });
+
+
+    /*---------------------------
                                   Magnific popup
     ---------------------------*/
     $('.magnific').magnificPopup({
