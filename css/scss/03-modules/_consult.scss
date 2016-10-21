@@ -1,0 +1,12 @@
+.consult {
+    background-color: rgba(255, 255, 255, .3);
+    padding: 60px 0;
+
+    &-form {
+        @include flex($alignI: center, $justify: center);
+
+        .form-group {
+            margin: 0 8px;
+        }
+    }
+}
