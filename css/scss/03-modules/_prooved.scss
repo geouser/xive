@@ -104,3 +104,59 @@
         }
     }
 }
+
+
+
+i.has-tooltip {
+    position: relative;
+
+    .tooltip {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        background-color: #fff;
+        color: #fa4844;
+        padding: 5px;
+        border-radius: 3px;
+        font-family: $rl;
+        font-size: 14px;
+        text-align: center;
+        border: 1px solid #fa4844;
+        margin-bottom: 5px;
+        -webkit-filter: drop-shadow(0px 0px 2px #fa4844);
+        filter: drop-shadow(0px 0px 2px #fa4844);
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+
+        span {
+            display: inline-block;
+            border-bottom: 1px dotted #fa4844;
+        }
+
+        &:after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 4px 3px 0 3px;
+            border-color: #fff transparent transparent transparent;
+            top: 100%;
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+    }
+
+    &:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+}
