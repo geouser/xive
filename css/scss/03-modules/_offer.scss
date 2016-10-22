@@ -16,4 +16,29 @@
 
 .advantages {
     margin-top: 115px;
+    &__item {
+        span {
+            font: 18px/24px $rl;
+            max-width: 165px;
+            display: inline-block;
+            padding-left: 65px;
+            position: relative;
+            text-align: left;
+            i {
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: #FFF;
+                font-size: 56px;
+            }
+        }
+    }
+}
+
+.interesting {
+    position: fixed;
+    right: 90px;
+    bottom: 40px;
+    width: 155px;
+    text-align: left;
 }
