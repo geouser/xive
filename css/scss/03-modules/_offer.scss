@@ -90,6 +90,12 @@
              -o-transform: rotate(180deg);
                 transform: rotate(180deg);
     }
+    &--dark {
+        &:before {
+            background-color: #0d3f5e;
+            color: #5e95ab;
+        }
+    }
 }
 
 .slick-prev:before {
