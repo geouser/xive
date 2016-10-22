@@ -3,6 +3,7 @@
     counter-reset: count;
     list-style-type: none;
     margin-top: 50px;
+    margin-bottom: 30px;
     li {
         margin-bottom: 37px;
         counter-increment: count;
@@ -41,5 +42,12 @@
                 margin: auto;
             }
         }
+    }
+    + span {
+        font: 24px/40px $rl;
+        color: #FFF;
+        display: block;
+        text-align: center;
+        margin-bottom: 35px;
     }
 }
