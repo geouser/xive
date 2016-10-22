@@ -1,0 +1,48 @@
+.facts {
+    padding-bottom: 140px;
+    
+    .subtitle {
+        color: #000;
+    }
+    .title {
+        color: #043655;
+    }
+}
+
+.facts-box {
+    @include flex($alignI: stretch, $justify: flex-start);
+    padding: 0 70px;
+
+    .fact {
+        width: 25%;
+        position: relative;
+        text-align: left;
+        padding: 0 30px 35px;
+        margin-bottom: 50px;
+
+        .fact-title {
+            font-size: 18px;
+            font-family: $rm;
+            line-height: 27px;
+            color: #000;
+        }
+
+        p {
+            font-size: 14px;
+            color: #514f4f;
+            line-height: 22px;
+        }
+
+        .fact-more {
+            font-size: 14px;
+            color: #fa4844;
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+}

@@ -82,3 +82,39 @@
         }
     }
 }
+
+
+.news {
+    padding-bottom: 30px;
+
+    .show-more {
+        margin-top: 15px;
+    }
+}
+.news-box {
+    @include flex($alignI: flex-start, $justify: space-around);
+    padding-top: 43px;
+
+    .news-item {
+        width: 200px;
+        height: 170px;
+        background-image: url(../images/news.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+
+        .news-title {
+            height: 50px;
+            @extend %vertAlign;
+
+            span {
+                max-width: 95%;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 18px;
+                font-family: $rm;
+                line-height: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.system-box {
+    @include flex();
+    margin: 40px 0 100px;
+
+    .item {
+        width: 25%;
+
+        img {
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        span {
+            display: block;
+            color: #fff;
+        }
+    }
+}

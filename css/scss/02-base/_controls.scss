@@ -17,6 +17,13 @@
     &:hover {
         background-color: #FA1815;
     }
+
+
+    &.empty {
+        background-color: transparent;
+        border: 1px solid #FA4844;
+        color: #000;
+    }
 }
 
 
