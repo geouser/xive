@@ -1,0 +1,45 @@
+.whyList {
+    @include flex($alignI: flex-start, $justify: center);
+    counter-reset: count;
+    list-style-type: none;
+    margin-top: 50px;
+    li {
+        margin-bottom: 37px;
+        counter-increment: count;
+        width: 50%;
+        position: relative;
+        padding-right: 100px;
+        color: #FFF;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: left;
+        &:after {
+            position: absolute;
+            right: 17px;
+            top: 0;
+            content: counter(count) ':0';
+            display: block;
+            font-size: 48px;
+            color: #04C1FF;
+            font-family: $rb;
+        }
+        &:nth-of-type(2n) {
+            padding-right: 0;
+            padding-left: 100px;
+            &:after {
+                right: auto;
+                left: 17px;
+            }
+        }
+        &:last-of-type {
+            padding: 65px 50px 0;
+            &:after {
+                right: 0;
+                width: 65px;
+                left: 0;
+                top: 0;
+                margin: auto;
+            }
+        }
+    }
+}
