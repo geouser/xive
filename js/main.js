@@ -66,6 +66,19 @@ jQuery(document).ready(function($) {
     });
 
 
+    /*---------------------------
+                                  Steps
+    ---------------------------*/
+    $('.step').on('click', function(event) {
+        event.preventDefault();
+        $(this).toggleClass('active').siblings().removeClass('active');
+    });
+
+    /*Tooltips actions*/
+    $('.has-tooltip').on('click', function(event) {
+        event.preventDefault();
+        /* Act on the event */
+    });
 
     /*---------------------------
                                   Slider
