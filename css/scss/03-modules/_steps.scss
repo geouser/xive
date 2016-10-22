@@ -1,3 +1,6 @@
+.steps {
+    padding-top: 140px;
+}
 .steps-box {
     @include flex($alignI: flex-start);
     color: #fff;

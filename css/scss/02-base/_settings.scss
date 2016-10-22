@@ -1,15 +1,19 @@
 
 // TYPOGRAPHIC
 // ---------------------------
-html,
-body {
-	height: 100%;
-}
 body {
     font-family: $rl;
     font-size: 18px;
     padding-top: 100px;
-    background-color: #00437A;
+    height: auto;
+    /*background-color: #00437A;*/
+
+    @media (min-width: 1200px) {
+        background-image: url(../images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: 50% 0;
+    }
 }
 section {
     position: relative;

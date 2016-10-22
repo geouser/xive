@@ -64,7 +64,7 @@
     .posibility {
         border: 1px solid #fff;
         font-family: $rm;
-        padding: 35px;
+        padding: 25px 35px;
         width: 260px;
         text-align: left;
         font-size: 24px;
@@ -78,7 +78,7 @@
 
     .posibility {
         @include flex();
-        padding: 65px 35px;
+        padding: 55px 35px;
         span {
             display: inline-block;
             vertical-align: middle;

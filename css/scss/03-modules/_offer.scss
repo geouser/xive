@@ -1,23 +1,23 @@
 .offer {
-    padding-top: 120px;
-    padding-bottom: 130px;
-    background-color: #001e36;
+    padding-top: 90px;
+    padding-bottom: 110px;
+    /*background-color: #001e36;*/
     position: relative;
     span {
         color: #FFF;
         font: 30px $rl;
     }
     h1 {
-        margin: 30px auto 50px;
+        margin: 15px auto 50px;
     }
 }
 
 .logo {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .advantages {
-    margin-top: 115px;
+    margin-top: 120px;
     &__item {
         span {
             font: 18px/24px $rl;
