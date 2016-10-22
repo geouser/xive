@@ -1,6 +1,8 @@
 .offer {
     padding-top: 120px;
+    padding-bottom: 130px;
     background-color: #001e36;
+    position: relative;
     span {
         color: #FFF;
         font: 30px $rl;
@@ -16,4 +18,92 @@
 
 .advantages {
     margin-top: 115px;
+    &__item {
+        span {
+            font: 18px/24px $rl;
+            max-width: 165px;
+            display: inline-block;
+            padding-left: 65px;
+            position: relative;
+            text-align: left;
+            min-height: 56px;
+            i {
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: #FFF;
+                font-size: 56px;
+            }
+        }
+    }
+}
+
+.interesting {
+    position: absolute;
+    right: 90px;
+    bottom: 200px;
+    width: 155px;
+    text-align: left;
+    p {
+        color: #FFF;
+        font-family: $rl;
+        line-height: 30px;
+        font-size: 18px;
+        span {
+            font-family: $rm;
+            font-size: 18px;
+        }
+        a {
+            font-size: 14px;
+            display: block;
+            color: #FFF;
+            &:after {
+                content: "\f2fb";
+                display: inline-block;
+                vertical-align: middle;
+                color: #FFF;
+                font-family: $mdi;
+                margin-left: 8px;
+            }
+        }
+    }
+    &:before {
+        position: absolute;
+        left: -55px;
+        top: -8px;
+        width: 45px;
+        height: 45px;
+        content: "";
+        display: block;
+        content: "\f189";
+        line-height: 45px;
+        font-size: 28px;
+        font-family: $mdi;
+        color: #144660;
+        text-align: center;
+        background-color: #FFF;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        -webkit-transform: rotate(180deg);
+           -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+             -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+}
+
+.slick-prev:before {
+    width: 18px;
+    height: 27px;
+    content: "";
+    display: block;
+    background-image: url('../images/arrows.png');
+}
+.slick-next:before {
+    width: 18px;
+    height: 27px;
+    content: "";
+    display: block;
+    background-image: url('../images/arrows.png');
+    background-position: 18px 0px;
 }

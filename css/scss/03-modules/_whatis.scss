@@ -3,13 +3,14 @@
 }
 .whatIs {
     @include flex($alignI: flex-start);
-    margin-top: 125px;
+    margin-top: 40px;
     text-align: left;
     &__column {
         width: 33.33%;
         p {
             color: #FFF;
             margin-bottom: 30px;
+            font: 18px/26px $rl;
             &:last-of-type {
                 margin-bottom: 0;
             }
@@ -22,7 +23,7 @@
             color: #FFF;
             padding: 0 70px;
             position: relative;
-            i {
+            img {
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -35,5 +36,15 @@
                 display: block;
             }
         }
+    }
+}
+
+.quote {
+    padding: 50px 100px;
+    margin: 50px auto 145px;
+    border: 1px solid #fff;
+    p {
+        font: 24px/36px $rl;
+        color: #FFF;
     }
 }
