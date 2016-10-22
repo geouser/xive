@@ -1,0 +1,39 @@
+.whatIsSection {
+    margin-top: 125px;
+}
+.whatIs {
+    @include flex($alignI: flex-start);
+    margin-top: 125px;
+    text-align: left;
+    &__column {
+        width: 33.33%;
+        p {
+            color: #FFF;
+            margin-bottom: 30px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+        strong {
+            color: #FFF;
+        }
+        &__li {
+            margin-bottom: 60px;
+            color: #FFF;
+            padding: 0 70px;
+            position: relative;
+            i {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        &:nth-of-type(3) {
+            padding-left: 60px;
+            strong {
+                margin-bottom: 20px;
+                display: block;
+            }
+        }
+    }
+}
