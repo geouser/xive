@@ -45,32 +45,11 @@
             }
         }   
 
-        .slick-arrow {
-            font-family: $mdi;
-            width: auto;
-            height: auto;
-            margin-top: -25px;
-
-            &:before {
-                font-family: $mdi;
-                color: #CDC9C9;
-                font-size: 50px;
-            }
-        }
-
         .slick-prev {
             left: 0;
-
-            &:before {
-                content: '\f2fa';
-            }
         }
         .slick-next {
             right: 0;
-
-            &:before {
-                content: '\f2fb';
-            }
         }
 
         .slick-dots {
