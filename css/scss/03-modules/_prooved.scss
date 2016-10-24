@@ -1,5 +1,8 @@
 .prooved {
     padding-bottom: 215px;
+    @media (max-width: 700px) {
+        padding-bottom: 100px;
+    }
 }
 
 
@@ -10,7 +13,9 @@
     padding-top: 50px;
     position: relative;
     margin-bottom: 40px;
-
+    @include m1100 {
+        padding: 50px 20px 0;
+    }
     .desc {
         width: 460px;
         padding-right: 30px;
@@ -59,7 +64,9 @@
     @include flex($alignI: flex-start, $justify: space-between);
     color: #fff;
     margin-bottom: 40px;
-
+    @include m1100 {
+        padding: 0 20px;
+    }
     .percent,
     .posibility {
         border: 1px solid #fff;
