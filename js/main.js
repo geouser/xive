@@ -62,16 +62,18 @@ $('select').each(function(index, el) {
     });
 });
 
+
 jQuery(document).ready(function($) {
 
-    /*---------------------------
-                                  Scrollr
-    ---------------------------*/
-    var s = skrollr.init();
-
-
-
-    
+    $(window).on('load', function(event) {
+        event.preventDefault();
+        /* Act on the event */
+        var s = skrollr.init();
+        if (s.isMobile()) {
+            s.destroy();
+        }
+    });
+   
 
     /*---------------------------
                                   ADD CLASS ON SCROLL
@@ -225,5 +227,13 @@ jQuery(document).ready(function($) {
         });
         
     });
+
+    $( ".overlay" ).delay( 500 ).queue(function(next) {
+        $(this).css({
+            opacity: '0',
+            visibility: 'hidden'
+        });
+        next(); 
+    })  
 
 }); // end file
