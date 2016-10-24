@@ -7,6 +7,9 @@
 
         .form-group {
             margin: 0 8px;
+            @include m900 {
+                width: 100%;
+            }
         }
     }
 }

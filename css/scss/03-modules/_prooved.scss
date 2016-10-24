@@ -1,5 +1,11 @@
 .prooved {
     padding-bottom: 215px;
+    @media (max-width: 700px) {
+        padding-bottom: 100px;
+    }
+    @include m1000 {
+        padding-bottom: 160px;
+    }
 }
 
 
@@ -10,12 +16,21 @@
     padding-top: 50px;
     position: relative;
     margin-bottom: 40px;
-
+    @include m1100 {
+        padding: 50px 20px 0;
+    }
+    @include m1000 {
+        display: block;
+    }
     .desc {
         width: 460px;
         padding-right: 30px;
         text-align: left;
-
+        @include m1000 {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+        }
         i {
             cursor: pointer;
         }
@@ -26,13 +41,17 @@
         width: calc(100% - 460px);
         @include flex($alignI: flex-start);
         padding-left: 15px;
-
+        @include m1000 {
+            width: 100%;
+        }
         .item {
             width: 33.3333%;
             text-align: left;
             font-size: 14px;
             margin-top: -5px;
-
+            @include m1000 {
+                text-align: center;
+            }
             span {
                 display: block;
                 color: #03c1ff;
@@ -59,7 +78,16 @@
     @include flex($alignI: flex-start, $justify: space-between);
     color: #fff;
     margin-bottom: 40px;
-
+    @include m1100 {
+        padding: 0 20px;
+    }
+    @include m1000 {
+       -webkit-align-items: center;
+        align-items: center;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
     .percent,
     .posibility {
         border: 1px solid #fff;
@@ -68,7 +96,7 @@
         width: 260px;
         text-align: left;
         font-size: 24px;
-
+        
         .p-val {
             font-family: $rb;
             color: #03c1ff;
@@ -83,7 +111,9 @@
             display: inline-block;
             vertical-align: middle;
         }
-
+        @include m1000 {
+             margin: 0 0 40px;
+        }
         .p-lbl {
             width: 150px;
         }
@@ -101,6 +131,9 @@
         }
         p:not(:last-child) {
             margin-bottom: 30px;
+        }
+        @include m1000 {
+             margin: 40px 0;
         }
     }
 }

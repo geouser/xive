@@ -6,6 +6,9 @@
     span {
         color: #FFF;
         font: 30px $rl;
+        @media (max-width: 550px) {
+            font-size: 26px;
+        }
     }
     h1 {
         margin: 15px auto 50px;
@@ -18,6 +21,9 @@
 
 .advantages {
     margin-top: 120px;
+    @include m700 {
+        margin-top: 40px;
+    }
     &__item {
         span {
             font: 18px/24px $rl;
@@ -44,6 +50,21 @@
     bottom: 200px;
     width: 155px;
     text-align: left;
+    @include m1200 {
+        right: 10px;  
+        bottom: 220px;  
+        width: 120px;
+    }
+    @include m700 {
+        position: relative;
+        width: 200px;
+        margin: 60px auto 30px;
+        bottom: 0;
+        right: -45px;
+    }
+    @include m500 {
+        right: -30px;
+    }
     p {
         color: #FFF;
         font-family: $rl;
@@ -52,6 +73,12 @@
         span {
             font-family: $rm;
             font-size: 18px;
+        }
+        @include m1200 {
+            font-size: 16px;
+            span {
+                font-size: 16px;
+            }
         }
         a {
             font-size: 14px;
@@ -104,6 +131,14 @@
     content: "";
     display: block;
     background-image: url('../images/arrows.png');
+    @include m1200 {
+        left: 4px;
+    }
+}
+.slick-prev {
+    @include m1200 {
+        left: 4px;
+    }
 }
 .slick-next:before {
     width: 18px;
@@ -112,4 +147,9 @@
     display: block;
     background-image: url('../images/arrows.png');
     background-position: 18px 0px;
+}
+.slick-next {
+    @include m1200 {
+        right: 4px;
+    }
 }

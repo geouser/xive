@@ -5,15 +5,17 @@ body {
     font-family: $rl;
     font-size: 18px;
     padding-top: 100px;
-    
-    /*background-color: #00437A;*/
+    height: auto;
+    background-color: #00437A;
 
     @media (min-width: 1200px) {
-        background-image: url(../images/bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 0;
         height: auto!important;
+    }
+    @include m1200 {
+        padding-top: 0;
     }
 }
 section {
@@ -22,10 +24,27 @@ section {
 h2 {
     font: 30px $ptb;
     color: #FFF;
+    @include m1000 {
+        font-size: 24px;
+    }
+    @media (max-width: 550px) {
+        font-size: 18px;
+    }
 }
 h1 {
     font: 60px/75px $ptb;
     color: #FFF;
+    @include m1000 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+    @media (max-width: 550px) {
+        font-size: 38px;
+        line-height: 1.4;
+    }
+     @media (max-width: 360px) {
+        font-size: 34px;
+    }
 }
 strong {
     font-family: $rm;
@@ -38,4 +57,8 @@ strong {
 	margin: 0 auto;
 	text-align: center;
     padding: 0 10px;
+    @media (max-width: 1200px) {
+        width: 100%;
+        padding: 0 10px;
+    }
 }
