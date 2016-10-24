@@ -5,7 +5,7 @@ body {
     font-family: $rl;
     font-size: 18px;
     padding-top: 100px;
-    height: auto;
+    
     /*background-color: #00437A;*/
 
     @media (min-width: 1200px) {
@@ -13,6 +13,7 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 0;
+        height: auto!important;
     }
 }
 section {
