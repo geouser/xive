@@ -149,6 +149,9 @@ jQuery(document).ready(function($) {
         mainClass: 'my-mfp-slide-bottom'
     });
 
+    $('.goBack').on( "click", function() {
+      $.magnificPopup.close();
+    });
 
     $('.advantages').slick({
         slidesToShow: 3,
@@ -235,5 +238,7 @@ jQuery(document).ready(function($) {
         });
         next(); 
     })  
+
+    $('input[type="tel"]').inputmask("(999)999-99-99",{ showMaskOnHover: true });
 
 }); // end file
