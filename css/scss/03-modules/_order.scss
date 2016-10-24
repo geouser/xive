@@ -6,13 +6,23 @@
         padding: 55px 100px 65px;
         color: #fff;
         border: 1px solid #fff;
-
+        @include m900 {
+            padding: 30px 40px;
+        }
+        @include m700 {
+            display: block;
+        }
         p {
             width: 50%;
             text-align: left;
             font-size: 24px;
             line-height: 36px;
-
+            @include m700 {
+                width: 100%;
+            }
+            @include m700 {
+                text-align: center;
+            }
             &:last-child {
                 text-align: right;
             }
@@ -20,6 +30,10 @@
 
         .button {
             padding: 0 40px;
+            @include m700 {
+                display: block;
+                margin: 20px auto;
+            }
         }
     }
 }

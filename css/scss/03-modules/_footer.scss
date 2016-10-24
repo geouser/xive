@@ -9,20 +9,36 @@
         font-family: $ptb;
         opacity: .9;
         margin-bottom: 97px;
+        @include m1000 {
+            font-size: 48px;
+        }
+        @include m700 {
+            font-size: 38px;
+        }
+        @include m400 {
+            font-size: 30px;
+        }
     }
 
     .producer-box {
         padding: 0 100px;
         @include flex($alignI: flex-start);
-
+        @include m700 {
+            padding: 0;
+        }
         .col {
             width: 50%;
             text-align: left;
             padding: 0 100px;
             line-height: 30px;
-
+            @include m1100 {
+                padding: 0 30px;
+            }
             p:not(:last-child) {
                 margin-bottom: 30px;
+            }
+            @include m500 {
+                width: 100%;
             }
         }
     }

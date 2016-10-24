@@ -5,7 +5,13 @@
     width: 1080px;
     margin-left: auto;
     margin-right: auto;
-
+    @include m1100 {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    @include m1000 {
+        padding: 20px 10px;
+    }
     .slider-title {
         font-size: 30px;
         color: #043655;
@@ -21,6 +27,13 @@
 
             .wrap {
                 @include flex($alignI: flex-start);
+                img {
+                    @include m1000 {
+                        display: block;
+                        margin: 0 auto 20px;
+                        max-width: 100%;
+                    }
+                }
             }
 
             .img {
@@ -32,6 +45,9 @@
                 width: -webkit-calc(100% - 470px);
                 width: calc(100% - 470px);
                 text-align: left;
+                @include m1000 {
+                    width: 100%;
+                }
             }
 
             &-title {
@@ -93,6 +109,10 @@
         margin-bottom: 70px;
         .button {
             margin: 0 13px;
+            @include m1000 {
+                display: block;
+                margin: 20px auto;
+            }
         }
     }
 
@@ -106,7 +126,13 @@
             height: 245px;
             z-index: 1;
             margin-bottom: 35px;
-
+            @include m1000 {
+                margin: 10px auto;
+            }
+            @include m500 {
+                width: 280px;
+                height: 150px;
+            }
             &:after {
                 content: '';
                 width: 100%;
@@ -142,7 +168,9 @@
         .content {
             width: 100%!important;
             padding: 0 130px;
-
+            @include m700 {
+                padding: 0;
+            }
             .author {
                 text-align: center;
                 font-family: $rm;
