@@ -2,6 +2,30 @@
 .mainHeader {
     @include position(absolute, 40px, auto, auto, 0);
     width: 100%;
+    @include m1200 {
+        box-shadow: 0 0 20px rgba(0,0,0, .8);
+        position: fixed;
+        width: 290px;
+        left: auto;
+        right: -300px;
+        height: 100%;
+        overflow: scroll;
+        top: 0;
+        padding: 20px 0;
+        background-color: #00437A;
+        z-index: 100;
+        -webkit-transition: all .4s;
+           -moz-transition: all .4s;
+            -ms-transition: all .4s;
+             -o-transition: all .4s;
+                transition: all .4s;
+        &.active {
+            right: 0;
+        }
+        @include m400 {
+            width: 260px;
+        }
+     }
 }
 
 
@@ -11,7 +35,13 @@
     ul {
         @include flex();
         list-style-type: none;
+        @include m1200 {
+            display: block;
+        }
         li {
+            @include m1200 {
+                text-align: left;
+            }
             a {
                 position: relative;
                 margin-left: 22px;
@@ -27,9 +57,22 @@
                     color: $red;
                     font-weight: 700;
                     font-size: 24px;
+                    @include m1200 {
+                        top: 17px;
+                    }
                 }
                 &:hover {
                     border: none;
+                }
+                @include m1200 {
+                    display: block;
+                    text-align: left;
+                    font-size: 18px;
+                    line-height: 56px;
+                }
+                @include m400 {
+                    font-size: 16px;
+                    line-height: 48px;
                 }
             }
         }
@@ -44,39 +87,46 @@
 
 .menu-button     {    
     display: none;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     @include position(fixed, 15px, 15px, auto, auto);
     margin: auto; 
     cursor: pointer;
     z-index: 100;
-    background-color: salmon;
+    background-color: #f24f41;
     border: none;
+    box-shadow: 0 0 4px rgba(0,0,0, .4);
+    @include transition(all, .4s);
     -webkit-border-radius: 4px;
             border-radius: 4px;
     .menu-line {
         display: block;
         @include position(absolute, auto, 0, auto, 0);
         width: 60%;
-        height: 5px;
+        height: 3px;
         background-color: #fff;
         -webkit-border-radius: 1px;
         border-radius: 1px;
         @include transition(all, .4s);
     }
 
-    .top_line              {   top: 12px;  margin: auto;}
-    .middle_line           {   top: 22px;  margin: auto;}
-    .bottom_line           {   bottom: 12px; margin: auto;}
+    .top_line              {   top: 10px;  margin: auto;}
+    .middle_line           {   top: 19px;  margin: auto;}
+    .bottom_line           {   bottom: 10px; margin: auto;}
 
-    &.active               {   -webkit-border-radius: 6px; border-radius: 6px;}
+    &.active               {   -webkit-border-radius: 6px; border-radius: 6px; right: 300px}
     &.active .top_line     {   @include transform(rotate(45deg)); top: 45%;}
     &.active .bottom_line  {   @include transform(rotate(-45deg)); bottom: 45%;}
     &.active .middle_line  {   width: 0; left: 50%;}
 
         /*.................media.............*/
-        @include m800 {
+        @include m1200 {
             display: block;
+        }
+        @include m400 {
+            &.active {
+                right: 270px;
+            }
         }
         /*..............end media.............*/
 
