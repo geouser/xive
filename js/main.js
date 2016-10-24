@@ -5,7 +5,7 @@ window.params = {
 };
 
 /*Custom parallax*/
-$(window).on('scroll load', function(event) {
+/*$(window).on('scroll load', function(event) {
     event.preventDefault();
     var parallax_obj = $('.parallax');
     var sclae_obj = $('.prlx-scale');
@@ -28,7 +28,7 @@ $(window).on('scroll load', function(event) {
             transform: 'scale('+(0.2 + scrollTop/window_height)+') translateY('+(scrollTop*speed - top*speed)+'px)'
         });
     });
-});
+});*/
 
 
 
@@ -63,6 +63,15 @@ $('select').each(function(index, el) {
 });
 
 jQuery(document).ready(function($) {
+
+    /*---------------------------
+                                  Scrollr
+    ---------------------------*/
+    var s = skrollr.init();
+
+
+
+    
 
     /*---------------------------
                                   ADD CLASS ON SCROLL
