@@ -8,13 +8,24 @@ window.params = {
 $(window).on('scroll load', function(event) {
     event.preventDefault();
     var parallax_obj = $('.parallax');
+    var sclae_obj = $('.prlx-scale');
     var scrollTop = $(this).scrollTop();
+    var window_height = $(document).height();
+    console.log(window_height);
 
     parallax_obj.each(function(index, el) {
         var top = $(this).offset().top;
         var speed = $(this).attr('data-speed');
         $(this).css({
             transform: 'translateY('+(scrollTop*speed - top*speed)+'px)'
+        });
+    });
+
+    sclae_obj.each(function(index, el) {
+        var top = $(this).offset().top;
+        var speed = $(this).attr('data-speed');
+        $(this).css({
+            transform: 'scale('+(0.2 + scrollTop/window_height)+') translateY('+(scrollTop*speed - top*speed)+'px)'
         });
     });
 });

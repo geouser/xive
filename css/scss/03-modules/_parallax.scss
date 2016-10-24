@@ -3,9 +3,19 @@
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: -1;
-    -webkit-transition: all 0.05s ease;
-    -o-transition: all 0.05s ease;
-    transition: all 0.05s ease;
+    -webkit-transition: all 0.05s linear;
+    -o-transition: all 0.05s linear;
+    transition: all 0.05s linear;
+}
+
+.prlx-scale {
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    -webkit-transition: all 0.05s linear;
+    -o-transition: all 0.05s linear;
+    transition: all 0.05s linear;
 }
 
 .moon-2 {
@@ -80,4 +90,11 @@
     height: 456px;
     right: 0;
     bottom: 0;
+}
+
+.diver {
+    width: 320px;
+    height: 325px;
+    top: -190px;
+    right: 190px;
 }
