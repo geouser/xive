@@ -2,6 +2,10 @@
     position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
+    z-index: -1;
+    -webkit-transition: all 0.05s ease;
+    -o-transition: all 0.05s ease;
+    transition: all 0.05s ease;
 }
 
 .moon-2 {
@@ -32,4 +36,48 @@
     height: 1005px;
     left: 0;
     top: -100px;
+}
+
+.mks {
+    width: 507px;
+    height: 362px;
+    right: 25px;
+    top: 275px;
+}
+
+.cloud-3 {
+    width: 938px;
+    height: 683px;
+    right: 0;
+    top: 175px;
+}
+
+
+.baloon-1 {
+    width: 293px;
+    height: 371px;
+    top: 0;
+    left: 125px;
+}
+
+.cloud-4 {
+    width: 471px;
+    height: 542px;
+    left: 0;
+    top: 100px;
+}
+
+
+.baloon-2 {
+    width: 231px;
+    height: 277px;
+    right: 95px;
+    bottom: 170px;
+}
+
+.cloud-5 {
+    width: 659px;
+    height: 456px;
+    right: 0;
+    bottom: 0;
 }
