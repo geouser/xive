@@ -576,7 +576,24 @@
 
   	    <!-- //////////////////////////////////////////////////////////////////////// -->
 
-        <div id="modal-popup" class="mfp-hide zoom-anim-dialog popup"></div>
+        <div id="modal-popup" class="mfp-hide zoom-anim-dialog popup">
+            <form action="">
+                <label for="name">Фамилия Имя Отчество</label>
+                <input type="text" name="name">
+                <label for="email">E-mail</label>
+                <input type="email" name="email">
+                <label for="name">Телефон</label>
+                <input type="tel" name="tel">
+                <label for="question">Вопрос</label>
+                <textarea name="question" id="" cols="30" rows="10" placeholder="Введите свой вопрос"></textarea>
+                <span class="agree">
+                    <input type="checkbox" checked>
+                    <span>Я разрешаю опубликовать анонимно мой вопрос</span>
+                </span>
+                <button class="button">Задать вопрос специалисту</button>
+                <span class="goBack">Вернуться на главную</span>
+            </form>
+        </div>
 
         <div id="modal-popup-ok" class="mfp-hide zoom-anim-dialog popup result">
             <p class="heading">Ваша заявка принята =)</p>
