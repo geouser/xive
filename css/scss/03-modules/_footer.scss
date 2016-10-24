@@ -43,18 +43,42 @@
         }
     }
 }
-
-#modal-popup {
+.mfp-close-btn-in .mfp-close {
+    color: #043655;
+    font-family: $rl;
+    font-size: 32px;
+}
+.popup {
+    padding: 35px 40px;
+    background-color: #F0EAD7;
+    font: 16px/30px $rl;
+    color: #043655;
     left: 0;
     right: 0;
     margin: auto;
-    width: 470px;
-    padding: 35px 40px;
-    background-color: #F0EAD7;
-    -webkit-border-radius: 4px;
+    width: 635px;
+    max-width: 100%;
+     -webkit-border-radius: 4px;
             border-radius: 4px;
+    .popupTitle {
+        text-align: center;
+        display: block;
+        margin-bottom: 20px;
+        font-family: $rm;
+    }
+    @include m600 {
+        padding: 25px 15px;
+    }
 }
-#modal-popup form {
+.popup strong {
+    font-family: $rm;
+}
+
+#modal-popup,
+#modal-popup-2 {
+    width: 470px;
+}
+.popup form {
     text-align: center;
     label {
         font: 18px $rm;
@@ -91,6 +115,9 @@
         font-size: 16px;
         color: #043655;
         margin-top: 20px;
+        position: relative;
+        padding-left: 24px;
+        text-align: left;
         input {
             display: inline-block;
             vertical-align: middle;
@@ -99,10 +126,14 @@
             color: #FFF;
             background: #00ad5d;
             margin: 2px 0 0;
+            position: absolute;
+            left: 0;
+            top: 4px;
         }
         span {
             display: inline-block;
             vertical-align: middle;
+            line-height: 26px;
         }
     }
     .button {
