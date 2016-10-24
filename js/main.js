@@ -4,6 +4,25 @@ window.params = {
     isIOS: /iPhone|iPad|iPod/i.test(navigator.userAgent)
 };
 
+/*Custom parallax*/
+$(window).on('scroll load', function(event) {
+    event.preventDefault();
+    var parallax_obj = $('.parallax');
+    var scrollTop = $(this).scrollTop();
+
+    parallax_obj.each(function(index, el) {
+        var top = $(this).offset().top;
+        var speed = $(this).attr('data-speed');
+        $(this).css({
+            transform: 'translateY('+(scrollTop*speed - top*speed)+'px)'
+        });
+    });
+});
+
+
+
+
+
 /*custom select*/
 $('select').each(function(index, el) { 
     var select = $(this).wrap('<div class="select"></div>');
