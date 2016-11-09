@@ -18,8 +18,16 @@
         li {
             width: 25%;
             list-style: none;
-            @include flex($alignI: flex-start);
+            @include flex($alignI: flex-start !important);
             padding-right: 40px;
+
+            &.visible {
+                display: -webkit-box!important;
+                display: -webkit-flex!important;
+                display: -moz-flex!important;
+                display: -ms-flexbox!important;
+                display: flex!important;
+            }
             @include m1100 {
                 padding-right: 20px;
             }

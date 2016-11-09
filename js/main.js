@@ -98,11 +98,28 @@ jQuery(document).ready(function($) {
         $(this).toggleClass('active').siblings().removeClass('active');
     });
 
+
+
+    $('.show-more').each(function(index, el) {
+        var el = $(this).attr('data-element');
+        var offset = $(this).attr('data-visible');
+        $(el).slice(offset, $(el).length ).css('display', 'none');
+
+        $(this).on('click', function(event) {
+            event.preventDefault();
+            $(el).css('display', 'block').addClass('visible');
+        })
+    });
+
+
+
     /*Tooltips actions*/
     $('.has-tooltip').on('click', function(event) {
         event.preventDefault();
         /* Act on the event */
     });
+
+
 
     /*---------------------------
                                   Slider
