@@ -40,6 +40,45 @@
         img {
             max-width: 100%;
         }
+        .img {
+            position: relative;
+            height: 276px;
+            .jar {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            .jar_3 {
+                position: absolute;
+                left: 125px;
+                bottom: 76px;
+                z-index: 3;
+                -webkit-animation: down_b 6s infinite;
+                   -moz-animation: down_b 6s infinite;
+                     -o-animation: down_b 6s infinite;
+                        animation: down_b 6s infinite;
+            }
+            .jar_2 {
+                position: absolute;
+                left: 128px;
+                bottom: 148px;
+                z-index: 2;
+                -webkit-animation: down_m 6s infinite;
+                   -moz-animation: down_m 6s infinite;
+                     -o-animation: down_m 6s infinite;
+                        animation: down_m 6s infinite;
+            }
+            .jar_1 {
+                z-index: 4;
+                position: absolute;
+                    left: 115px;
+                    bottom: 211px;
+                    -webkit-animation: down_t 6s infinite;
+                   -moz-animation: down_t 6s infinite;
+                     -o-animation: down_t 6s infinite;
+                        animation: down_t 6s infinite;
+            }
+        }
         &:nth-of-type(1) {
             @include m1000 {
                 text-align: center;
@@ -81,5 +120,61 @@
             font-size: 20px;
             line-height: 1.4;
         }
+    }
+}
+
+@keyframes down_m {
+    0% {
+        bottom: 149px;
+    }
+    30% {
+        bottom: 82px;
+    }
+    80% {
+        bottom: 82px;
+    }
+    90% {
+        bottom: 149px;
+    }
+    100% {
+        bottom: 149px;
+    }
+}
+@keyframes down_t{
+    0% {
+        bottom: 211px;
+    }
+    10% {
+        bottom: 211px;
+    }
+    50% {
+        bottom: 134px;
+    }
+    70% {
+        bottom: 134px;
+    }
+    90% {
+        bottom: 211px;
+    }
+    100% {
+        bottom: 211px;
+    }
+}
+
+@keyframes down_b {
+    0% {
+        bottom: 76px;
+    }
+    30% {
+        bottom: 70px;
+    }
+    80% {
+        bottom: 70px;
+    }
+    90% {
+        bottom: 76px;
+    }
+    100% {
+        bottom: 76px;
     }
 }

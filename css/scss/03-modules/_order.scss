@@ -12,6 +12,9 @@
         @include m700 {
             display: block;
         }
+        @include m500 {
+            padding: 20px 15px;
+        }
         p {
             width: 50%;
             text-align: left;
@@ -22,9 +25,14 @@
             }
             @include m700 {
                 text-align: center;
+                font-size: 20px;
+                line-height: 1.6;
             }
             &:last-child {
                 text-align: right;
+            }
+            @include m500 {
+                font-size: 18px;
             }
         }
 

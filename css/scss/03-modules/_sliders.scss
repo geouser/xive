@@ -22,17 +22,22 @@
     .slider {
         padding: 0 30px;
         margin-bottom: 25px;
-
+        @include m500 {
+            padding: 0 15px;
+        }
         .slide {
 
             .wrap {
                 @include flex($alignI: flex-start);
                 img {
-                    @include m1000 {
+                    @include m1100 {
                         display: block;
                         margin: 0 auto 20px;
                         max-width: 100%;
                     }
+                }
+                @include m1100 {
+                    display: block;
                 }
             }
 
@@ -58,6 +63,10 @@
 
             p {
                 line-height: 30px;
+                @include m500 {
+                    font-size: 16px;
+                    line-height: 1.4;
+                }
             }
         }   
 
@@ -113,6 +122,9 @@
                 display: block;
                 margin: 20px auto;
             }
+            @include m500 {
+                font-size: 12px;
+            }
         }
     }
 
@@ -126,12 +138,20 @@
             height: 245px;
             z-index: 1;
             margin-bottom: 35px;
+            @include m1100 {
+                display: block;
+                margin: 0 auto 20px;
+            }
             @include m1000 {
                 margin: 10px auto;
             }
             @include m500 {
                 width: 280px;
                 height: 150px;
+            }
+            @include m360 {
+                width: 260px;
+                height: 140px;
             }
             &:after {
                 content: '';

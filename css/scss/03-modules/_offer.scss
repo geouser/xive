@@ -14,7 +14,21 @@
         margin: 15px auto 50px;
     }
 }
-
+.overlay {
+    padding-top: 90px;
+    padding-bottom: 110px;
+    /*background-color: #001e36;*/
+    span {
+        color: #FFF;
+        font: 30px $rl;
+        @media (max-width: 550px) {
+            font-size: 26px;
+        }
+    }
+    h1 {
+        margin: 15px auto 50px;
+    }
+}
 .logo {
     margin-bottom: 15px;
 }
@@ -50,29 +64,44 @@
     bottom: 200px;
     width: 155px;
     text-align: left;
-    @include m1200 {
-        right: 10px;  
-        bottom: 220px;  
-        width: 120px;
+    @include m1600 {
+        right: 10px;
     }
-    @include m700 {
+    @include m1200 {
         position: relative;
         width: 200px;
         margin: 60px auto 30px;
         bottom: 0;
         right: -45px;
+        display: block;
     }
     @include m500 {
-        right: -30px;
+        right: 0px;
     }
     p {
         color: #FFF;
         font-family: $rl;
         line-height: 30px;
         font-size: 18px;
+        -webkit-transition: all .2s;
+           -moz-transition: all .2s;
+            -ms-transition: all .2s;
+             -o-transition: all .2s;
+                transition: all .2s;
+
+        @media (max-width: 1600px) {
+            font-size: 14px;
+            line-height: normal;
+        }
+
         span {
             font-family: $rm;
             font-size: 18px;
+            display: block;
+
+            @media (max-width: 1600px) {
+                font-size: 14px;
+            }
         }
         @include m1200 {
             font-size: 16px;
@@ -92,6 +121,11 @@
                 font-family: $mdi;
                 margin-left: 8px;
             }
+        }
+    }
+    &:hover {
+        p {
+            text-decoration: underline;
         }
     }
     &:before {
@@ -116,6 +150,14 @@
             -ms-transform: rotate(180deg);
              -o-transform: rotate(180deg);
                 transform: rotate(180deg);
+
+        @media (max-width: 1600px) {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 20px;
+            top: 0;
+        }
     }
     &--dark {
         &:before {

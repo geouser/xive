@@ -3,9 +3,15 @@
     
     .subtitle {
         color: #000;
+        @include m1200 {
+            color: #03c1ff;
+        }
     }
     .title {
         color: #043655;
+        @include m1200 {
+            color: #FFF;
+        }
     }
     @media (max-width: 700px) {
         padding-bottom: 80px;
@@ -44,12 +50,18 @@
             font-family: $rm;
             line-height: 27px;
             color: #000;
+             @include m1200 {
+                color: #FFF;
+            }
         }
 
         p {
             font-size: 14px;
             color: #514f4f;
             line-height: 22px;
+            @include m1200 {
+                color: #FFF;
+            }
         }
 
         .fact-more {
@@ -58,7 +70,9 @@
             position: absolute;
             bottom: 0;
             left: 30px;
-
+            @include m1200 {
+                color: #cdc9c9;
+            }
             i {
                 margin-left: 5px;
             }

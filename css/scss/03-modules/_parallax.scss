@@ -18,6 +18,9 @@
     
     bottom: 190px;
     right: 190px;
+    @include m1000 {
+        bottom: 0px;
+    }
 }
 
 .cloud-2 {
@@ -25,6 +28,9 @@
     height: 769px;
     right: 0;
     bottom: -100px;
+    @include m1200 {
+        max-width: 100%;
+    }
 }
 
 .moon-1 {
@@ -33,6 +39,9 @@
     
     top: 225px;
     left: 145px;
+    @include m1000 {
+        top: 0px;
+    }
 }
 
 .cloud-1 {
@@ -40,6 +49,9 @@
     height: 1005px;
     left: 0;
     top: -100px;
+    @include m1200 {
+        max-width: 100%;
+    }
 }
 
 .mks {
@@ -47,12 +59,21 @@
     height: 362px;
     right: 25px;
     top: 275px;
+    @include m1000 {
+        top: 405px;
+    }
+    @include m1200 {
+        max-width: 100%;
+    }
 }
 
 .cloud-3 {
     width: 938px;
     height: 683px;
     right: 0;
+    @include m1200 {
+        max-width: 100%;
+    }
     top: 175px;
 }
 
@@ -69,6 +90,9 @@
     height: 542px;
     left: 0;
     top: 100px;
+    @include m1200 {
+        max-width: 100%;
+    }
 }
 
 
@@ -77,6 +101,9 @@
     height: 277px;
     right: 95px;
     bottom: 170px;
+    @include m1000 {
+        bottom: -700px;
+    }
 }
 
 .cloud-5 {
@@ -84,6 +111,12 @@
     height: 456px;
     right: 0;
     bottom: 0;
+    @include m1200 {
+        max-width: 100%;
+    }
+    @include m1000 {
+        bottom: -700px;
+    }
 }
 
 .diver {

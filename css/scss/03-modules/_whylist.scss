@@ -52,6 +52,7 @@
         }
         &:last-of-type {
             padding: 65px 50px 0;
+            margin-top: -20px;
             &:after {
                 right: 0;
                 width: 65px;
@@ -60,6 +61,7 @@
                 margin: auto;
             }
             @include m700 {
+                margin-top: 0;
                 width: 100%;
                 padding: 0 100px 0 0;
                 &:after {

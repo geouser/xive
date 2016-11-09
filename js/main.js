@@ -56,7 +56,7 @@ jQuery(document).ready(function($) {
 
         $('html, body').animate({scrollTop: el.offset().top}, 600);
     });
-   
+
 
     /*---------------------------
                                   ADD CLASS ON SCROLL
@@ -67,7 +67,7 @@ jQuery(document).ready(function($) {
             $element2 = $('header'),
             className = 'hasScrolled';
 
-        $document.scroll(function() {
+        $document.on('scroll load', function() {
             $element.toggleClass(className, $document.scrollTop() >= 1);
             $element2.toggleClass(className, $document.scrollTop() >= 1);
         });
