@@ -74,6 +74,12 @@ jQuery(document).ready(function($) {
         }
     });
    
+   $('.mainNav a').click(function() {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top - 80 
+        }, 800);
+        return false;
+    });
 
     /*---------------------------
                                   ADD CLASS ON SCROLL

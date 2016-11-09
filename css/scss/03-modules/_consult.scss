@@ -12,4 +12,9 @@
             }
         }
     }
+    @include m500 {
+        .button {
+            font-size: 12px;
+        }
+    }
 }

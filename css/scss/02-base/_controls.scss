@@ -13,7 +13,10 @@
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-
+    @include m500 {
+        font-size: 16px;
+        padding: 0 15px;
+    }
     &:hover {
         background-color: #FA1815;
     }

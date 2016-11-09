@@ -19,7 +19,11 @@
         <link rel="stylesheet" href="css/general.css">
     </head>
     <body>
-        <div class="overlay"></div>
+        <div class="overlay">
+            <div class="wrapper">
+                <div class="logo"><img src="images/logo.png" alt=""></div>
+            </div>
+        </div>
 
        
         <!--=================================================================================================-->
@@ -29,11 +33,11 @@
 
                 <nav class="mainNav"><!-- start navigation -->
                     <ul>
-                        <li><a href=""><i class="zmdi zmdi-close"></i>Что такое имплантант</a></li>
-                        <li><a href=""><i class="zmdi zmdi-close"></i>Этапы импламентации</a></li>
-                        <li><a href=""><i class="zmdi zmdi-close"></i>Почему XiVE</a></li>
-                        <li><a href=""><i class="zmdi zmdi-close"></i>Информация для пациента</a></li>
-                        <li><a href=""><i class="zmdi zmdi-close"></i>Где установить</a></li>
+                        <li><a href="#whatIs"><i class="zmdi zmdi-close"></i>Что такое имплантант</a></li>
+                        <li><a href="#steps"><i class="zmdi zmdi-close"></i>Этапы импламентации</a></li>
+                        <li><a href="#why"><i class="zmdi zmdi-close"></i>Почему XiVE</a></li>
+                        <li><a href="#information"><i class="zmdi zmdi-close"></i>Информация для пациента</a></li>
+                        <li><a href="#where"><i class="zmdi zmdi-close"></i>Где установить</a></li>
                     </ul>
                 </nav><!-- end nav -->
 
@@ -63,9 +67,9 @@
                 <h1>Имплантация без ограничений</h1>
                 <a href="#modal-popup" class="button magnific">Задать вопрос специалисту</a>
 
-                <div class="interesting">
-                    <p><span>Это интересно!</span>Имплантаты XiVE на МКС <a href="">Подробнее</a></p>
-                </div>
+                <a href="#info-popup-2" class="interesting magnific">
+                    <p><span>Это интересно!</span>Имплантаты XiVE на МКС</p>
+                </a>
 
                 <div class="advantages">
                     <div class="advantages__item"><span><i class="zmdi zmdi-check-circle"></i>Пожизненная гарантия</span></div>
@@ -79,7 +83,7 @@
             </div><!-- end offerInfo -->
         </section><!-- end offer section -->
 
-        <section class="whatIsSection">
+        <section class="whatIsSection" id="whatIs">
             <div class="parallax moon-2" style="background-image: url(images/moon-2.png);" data-bottom-top="margin-bottom: 0px;" data--400-top="margin-bottom: 200px;"></div>
             <div class="parallax cloud-2" style="background-image: url(images/cloud-2.png);" data-bottom-top="margin-bottom: 0px;" data--200-top="margin-bottom: 100px;"></div>
 
@@ -87,7 +91,12 @@
                 <h2>Что такое имплантат и его функция</h2>
                 <div class="whatIs">
                     <div class="whatIs__column">
-                        <img src="images/jar.png" alt="">
+                        <div class="img">
+                            <img src="images/jar_1.png" alt="" class="jar_1">
+                            <img src="images/jar_2.png" alt="" class="jar_2">
+                            <img src="images/jar_3.png" alt="" class="jar_3">
+                            <img src="images/jar.png" alt="" class="jar">
+                        </div>
                     </div>
                     <div class="whatIs__column">
                         <p>Дентальный (зубной) имплантат ― <strong>это миниатюрный винт из титана, искусственный корень</strong>, который устанавливается в костную ткань челюсти и «нагружается» искусственным зубом. В верхнюю часть имплантата крепится абатмент ― основание для будущей коронки.</p>
@@ -104,7 +113,7 @@
                             <span>при отсутствии нескольких зубов</span>
                         </div>
                         <div class="whatIs__column__li">
-                            <img src="images/flower_3.png" alt="">
+                            <img src="images/flower_4.png" alt="">
                             <span>при полной адентии (отсутствии зубов на одной или обеих челюстях)</span>
                         </div>
                     </div>
@@ -129,22 +138,22 @@
                     <li>При установке имплантата нет необходимости обтачивать соседние здоровые зубы и удалять нервы из них.</li>
                     <li>Имплантат прослужит вам всю жизнь ― инвестировав однажды в его установку вы избежите серьезных трат на замену мостовидных или съемных протезов в будущем</li>
                     <li>Протез на имплантате не требует фиксации на специальные средства, его не нужно снимать для проведения гигиенических процедур.</li>
-                    <li>Имплантат помогает сохранить объем кости. При применении мостовидных или съемных протезов локальная нагрузка на кость отсутствует, что приводит к уменьшению объема кости и мягких тканей, в результате, между десной и протезом может образоваться зазор.</li>
+                    <li>Имплантат помогает сохранить объем кости. При применении мостовидных или съемных протезов локальная нагрузка на кость отсутствует, что приводит к уменьшению объема кости и мягких тканей.</li>
                     <li>При использовании мостовидных протезов нагрузка на соседние зубы увеличивается, что может привести к их потере</li>
                     <li>Имплантат выглядит и «работает» как натуральный зуб. Протез на имплантате не вызывает неудобства, не искажает дикцию, не меняет вкуса пищи, не выпадает</li>
                 </div>
                 <span>Имплантация VS Традиционное протезирование: Чистая победа!</span>
-                <button class="button">Задать вопрос специалисту</button>
+                <a href="#modal-popup" class="button magnific">Задать вопрос специалисту</a>
             </div>
-             <div class="interesting interesting--dark">
-                <p><span>Это интересно!</span>Какую нагрузку испытывает зуб при жевании?<a href="">Подробнее</a></p>
-            </div>
+            <a href="#info-popup-2" class="interesting interesting--dark magnific">
+                <p><span>Это интересно!</span>Какую нагрузку испытывает зуб при жевании?</p>
+            </a>
         </section>
 
 
         
 
-        <section class="steps">
+        <section class="steps" id="steps">
             <div class="wrapper">
                 <h2 class="title">Этапы имплантации</h2>
 
@@ -212,13 +221,17 @@
                             <li>Вы улыбаетесь, принимаете пищу, общаетесь без дискомфорта</li>
                         </ul>
                     </div>
+                    <p>C имплантатами XiVE: удаление и имплантация – одна операция!</p>
                 </div>
             </div>
+            <a href="#info-popup-2" class="interesting interesting--dark magnific">
+                <p><span>Это интересно!</span>Высокий результат даже в самых сложных условиях</p>
+            </a>
         </section> <!-- end steps -->
 
 
 
-        <section class="facts">
+        <section class="facts" id="why">
             <div class="wrapper">
                 <h2 class="title">Why XiVE?</h2>
                 <p class="subtitle">Несколько фактов об имплантатах XiVE</p>
@@ -226,7 +239,7 @@
                 <div class="facts-box">
                     <div class="fact">
                         <p class="fact-title">XiVE надежно устанавливается в кость любой плотности</p>
-                        <p></p>
+                        <p>и гарантирует первичную стабильность.</p>
                         <a href="#info-popup" class="fact-more magnific">Подробнее <i class="zmdi zmdi-chevron-right"></i></a>
                     </div>
                     <div class="fact">
@@ -295,7 +308,7 @@
         </section>
 
 
-        <section class="prooved">
+        <section class="prooved" id="information">
             <div class="wrapper">
                 <p class="subtitle">Доказано наукой:</p>
                 <h2 class="title">Имплантаты XiVE способствуют сохранению уровня кости</h2>
@@ -327,6 +340,9 @@
                 </div>
 
                 <a href="#" class="button">Скачать сборник научной документации</a>
+                <a href="#info-popup-2" class="interesting magnific">
+                    <p><span>Это интересно!</span>Высокий результат даже в самых сложных условиях</p>
+                </a>
             </div>
         </section> <!-- end prooved -->
 
@@ -408,18 +424,18 @@
                 <h2 class="title">Полезно знать</h2>
 
                 <div class="news-box">
-                    <div class="news-item">
+                    <a href="#info-popup-2" class="news-item magnific">
                         <div class="news-title"><span>Лечебный процесс</span></div>
-                    </div>
-                    <div class="news-item">
+                    </a>
+                    <a href="#info-popup-2" class="news-item magnific">
                         <div class="news-title"><span>Перед операцией</span></div>
-                    </div>
-                    <div class="news-item">
+                    </a>
+                    <a href="#info-popup-2" class="news-item magnific">
                         <div class="news-title"><span>После операции</span></div>
-                    </div>
-                    <div class="news-item">
+                    </a>
+                    <a href="#info-popup-2" class="news-item magnific">
                         <div class="news-title"><span>Долгосрочное наблюдение</span></div>
-                    </div>
+                    </a>
                 </div>
 
                 <a href="#" class="show-more">Показать еще</a>
@@ -450,7 +466,7 @@
         </section> <!-- end section -->
 
 
-        <section class="city">
+        <section class="city" id="where">
             <div class="wrapper">
                 <h2 class="title">Имплантаты XiVE можно установить здесь</h2>
 
@@ -532,7 +548,7 @@
             <div class="wrapper">
                 <div class="order-box">
                     <p>Если Вы уже выбрали клинику, но её нет в нашем списке, оставьте заявку и мы доставим в неё импланты XiVE</p>
-                    <p><button class="button">Заказать имплантаты</button></p>
+                    <p><a href="#modal-popup-2" class="button magnific">Заказать имплантаты</a></p>
                 </div>
             </div>
         </section> <!-- end order -->
@@ -554,8 +570,8 @@
                             68229 Mannheim GERMANY
                         </p>
                         <p>
-                            Tel: +49 621 4302-000
-                            Fax: +49 621 4302-001
+                            <a href="tel:+49 621 4302-000">Tel: +49 621 4302-000</a>
+                            <a href="tel:+49 621 4302-001">Fax: +49 621 4302-001</a>
                         </p>
                     </div>
                     <div class="col">
@@ -634,7 +650,6 @@
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="http://maps.googleapis.com/maps/api/js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>

@@ -6,6 +6,9 @@
         .select {
             width: 360px;
             display: inline-block;
+            @include m500 {
+                width: 100%;
+            }
         }
     }
 
@@ -41,6 +44,9 @@
                 font-size: 18px;
                 line-height: 30px;
                 text-align: left;
+                @include m500 {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -120,6 +126,7 @@
         .news-title {
             height: 50px;
             @extend %vertAlign;
+            color: #000;
 
             span {
                 max-width: 95%;

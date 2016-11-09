@@ -2,6 +2,10 @@
     padding-top: 140px;
 }
 .steps-box {
+    > p {
+        width: 100%;
+        text-align: center;
+    }
     @include flex($alignI: flex-start);
     color: #fff;
     margin-top: 50px;
@@ -69,6 +73,7 @@
             -webkit-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
             transition: all 0.3s ease;
+            left: 0;
 
             li {
                 list-style: none;

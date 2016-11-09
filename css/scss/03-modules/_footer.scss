@@ -31,6 +31,7 @@
             text-align: left;
             padding: 0 100px;
             line-height: 30px;
+            color: #FFF;
             @include m1100 {
                 padding: 0 30px;
             }
@@ -39,6 +40,10 @@
             }
             @include m500 {
                 width: 100%;
+            }
+            a {
+                display: block;
+                color: #FFF;
             }
         }
     }

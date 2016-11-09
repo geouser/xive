@@ -6,6 +6,11 @@
     @include m1000 {
         padding-bottom: 160px;
     }
+    @include m500 {
+        .button {
+            font-size: 13px;
+        }
+    }
 }
 
 
@@ -43,6 +48,7 @@
         padding-left: 15px;
         @include m1000 {
             width: 100%;
+            padding-left: 0;
         }
         .item {
             width: 33.3333%;
@@ -134,6 +140,9 @@
         }
         @include m1000 {
              margin: 40px 0;
+        }
+        @include m500 {
+            width: 100%;
         }
     }
 }
