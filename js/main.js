@@ -54,7 +54,7 @@ jQuery(document).ready(function($) {
         var target = $(this).attr('href');
         var el = $(target);
 
-        $('html, body').animate({scrollTop: el.offset().top}, 600);
+        $('html, body').animate({scrollTop: el.offset().top-80}, 600);
     });
 
 
