@@ -1,11 +1,23 @@
 
 // TYPOGRAPHIC
 // ---------------------------
+
+* {
+    transition: filter .3s ease;
+}
+.mfp-wrap ~ * {
+    -webkit-filter: blur(2px);
+    -o-filter: blur(2px);
+    filter: blur(2px);
+}
+
+
 body {
     font-family: $rl;
     font-size: 18px;
     padding-top: 100px;
     height: auto;
+
     
 
     @media (min-width: 1201px) {
@@ -72,6 +84,9 @@ strong {
     z-index: 10;
 }
 
+.red {
+    color: $red;
+}
 
 // lAYOUT
 // ---------------------------

@@ -4,34 +4,6 @@ window.params = {
     isIOS: /iPhone|iPad|iPod/i.test(navigator.userAgent)
 };
 
-/*Custom parallax*/
-/*$(window).on('scroll load', function(event) {
-    event.preventDefault();
-    var parallax_obj = $('.parallax');
-    var sclae_obj = $('.prlx-scale');
-    var scrollTop = $(this).scrollTop();
-    var window_height = $(document).height();
-    console.log(window_height);
-
-    parallax_obj.each(function(index, el) {
-        var top = $(this).offset().top;
-        var speed = $(this).attr('data-speed');
-        $(this).css({
-            transform: 'translateY('+(scrollTop*speed - top*speed)+'px)'
-        });
-    });
-
-    sclae_obj.each(function(index, el) {
-        var top = $(this).offset().top;
-        var speed = $(this).attr('data-speed');
-        $(this).css({
-            transform: 'scale('+(0.2 + scrollTop/window_height)+') translateY('+(scrollTop*speed - top*speed)+'px)'
-        });
-    });
-});*/
-
-
-
 
 
 /*custom select*/
@@ -72,6 +44,17 @@ jQuery(document).ready(function($) {
         if (s.isMobile()) {
             s.destroy();
         }
+    });
+
+    /*---------------------------
+                                  Scroll menu
+    ---------------------------*/
+    $('.menu-link').on('click', function(event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        var el = $(target);
+
+        $('html, body').animate({scrollTop: el.offset().top}, 600);
     });
    
 
@@ -146,12 +129,22 @@ jQuery(document).ready(function($) {
         
         midClick: true,
         removalDelay: 300,
-        mainClass: 'my-mfp-slide-bottom'
+        mainClass: 'my-mfp-slide-bottom',
+        callbacks: {
+            open: function() {
+                $('body').addClass('blur');
+            },
+            close: function() {
+                $('body').removeClass('blur');
+            }
+        }
     });
+
 
     $('.goBack').on( "click", function() {
       $.magnificPopup.close();
     });
+
 
     $('.advantages').slick({
         slidesToShow: 3,
