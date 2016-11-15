@@ -53,12 +53,17 @@
         &:last-of-type {
             padding: 65px 50px 0;
             margin-top: -20px;
+            
             &:after {
                 right: 0;
                 width: 65px;
                 left: 0;
-                top: 0;
+                top: 20px;
                 margin: auto;
+                -webkit-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                transform: none;
             }
             @include m700 {
                 margin-top: 0;
@@ -67,6 +72,11 @@
                 &:after {
                     right: 17px;
                     left: auto;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    transform: translateY(-50%);
                 }
             }
         }

@@ -57,6 +57,11 @@ jQuery(document).ready(function($) {
         $('html, body').animate({scrollTop: el.offset().top-80}, 600);
     });
 
+    $('.scroll-top').on('click', function(event) {
+        event.preventDefault();
+        $('html, body').animate( { scrollTop: 0 }, 600 );
+    });
+
 
     /*---------------------------
                                   ADD CLASS ON SCROLL
@@ -102,12 +107,17 @@ jQuery(document).ready(function($) {
 
     $('.show-more').each(function(index, el) {
         var el = $(this).attr('data-element');
-        var offset = $(this).attr('data-visible');
-        $(el).slice(offset, $(el).length ).css('display', 'none');
 
         $(this).on('click', function(event) {
             event.preventDefault();
-            $(el).css('display', 'block').addClass('visible');
+            $('.show-more-container[data-selector=' + el + ']').toggleClass('active');
+            $(this).toggleClass('active');
+
+            if ( $(this).hasClass('active') ) {
+                $(this).text('Показать меньше');
+            } else {
+                $(this).text( $(this).attr('data-label') );
+            }
         })
     });
 

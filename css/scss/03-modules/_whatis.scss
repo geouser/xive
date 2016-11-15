@@ -48,6 +48,10 @@
                 left: 0;
                 bottom: 0;
             }
+            .jar-top {
+                z-index: 5;
+                opacity: .7;
+            }
             .jar_3 {
                 position: absolute;
                 left: 125px;
@@ -128,10 +132,10 @@
         bottom: 149px;
     }
     30% {
-        bottom: 82px;
+        bottom: 45px;
     }
     80% {
-        bottom: 82px;
+        bottom: 45px;
     }
     90% {
         bottom: 149px;
@@ -148,10 +152,10 @@
         bottom: 211px;
     }
     50% {
-        bottom: 134px;
+        bottom: 55px;
     }
     70% {
-        bottom: 134px;
+        bottom: 55px;
     }
     90% {
         bottom: 211px;
@@ -166,10 +170,10 @@
         bottom: 76px;
     }
     30% {
-        bottom: 70px;
+        bottom: 5px;
     }
     80% {
-        bottom: 70px;
+        bottom: 5px;
     }
     90% {
         bottom: 76px;

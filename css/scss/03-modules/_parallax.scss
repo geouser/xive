@@ -58,7 +58,7 @@
     width: 507px;
     height: 362px;
     right: 25px;
-    top: 275px;
+    top: 235px;
     @include m1000 {
         top: 405px;
     }
@@ -90,6 +90,9 @@
     height: 542px;
     left: 0;
     top: 100px;
+    opacity: .5;
+    
+
     @include m1200 {
         max-width: 100%;
     }
@@ -124,4 +127,8 @@
     height: 325px;
     top: -190px;
     right: 190px;
+
+    @media (max-width: 1200px) {
+        display: none;
+    }
 }

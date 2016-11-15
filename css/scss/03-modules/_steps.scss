@@ -15,6 +15,13 @@
     @include m700 {
         margin-bottom: 80px;
     }
+    .quote {
+        @media (max-width: 1100px) {
+            margin-bottom: 0;
+        }
+    }
+
+        
     .step {
         width: 33.3333%;
         padding-right: 30px;
